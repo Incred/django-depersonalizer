@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-depersonalizer"
+version = "0.1.0"
+description = "Django application that allows you to automatically depersonalize the data of specified models."
+authors = ["Dmitry <theincred@ya.ru>"]
+readme = "README.md"
+packages = [{include = "django_depersonalizer"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mimesis = "7.1.0"
+
+[tool.poetry.group.dev.dependencies]
+Django = "4.2"
+ipython = "^8.22.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
