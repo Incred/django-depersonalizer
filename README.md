@@ -4,6 +4,7 @@ Ddjango data obfuscation app.
 
 Add configuration to settings.py, e.g.:
 
+```python
 DEPERSONALIZER_SETTINGS_PREFIX = "DEPERSONALIZER"
 DEPERSONALIZER_MODELS = {
     # app_label.model_name: options
@@ -16,3 +17,4 @@ DEPERSONALIZER_MODELS = {
 DEPERSONALIZER_ADDITIONAL_FIELD_SOURCE_MAP = {
     "company_name": "finance.company", # source for this field
 }
+```
