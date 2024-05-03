@@ -6,6 +6,7 @@ from .settings import DEFAULT_SETTINGS
 
 SETTINGS_PREFIX = getattr(django_settings, 'DEPERSONALIZER_SETTINGS_PREFIX', 'DEPERSONALIZER')
 
+
 class Settings:
     default_settings: dict = {}
 
